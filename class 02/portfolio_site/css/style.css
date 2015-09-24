@@ -1,0 +1,19 @@
+body {
+	font-family: arial;
+	background-color: gray;
+	border-top: solid 5px black;
+	border-bottom: solid 5px black;
+	padding: 10px;
+	margin: 10px;
+	}
+
+h1 {
+	font-family: arial;
+	font-size: 28px;
+	font-weight: bold;
+}
+h2 {
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bold;
+}
