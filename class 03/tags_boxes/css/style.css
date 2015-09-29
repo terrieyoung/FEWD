@@ -1,0 +1,27 @@
+html {
+ box-sizing: border-box;
+}
+​*, *​:before, *:after {
+ box-sizing: inherit;
+}
+h1 {
+	background-color: red;
+	padding: 20px;
+	border-color: black ;
+	border-width: 2px;
+	border-style: solid;
+	width: 50%;
+}
+p {
+	background-color: blue;
+	color: white;
+	padding: 3px;
+	border: black 5px solid;
+
+}
+code {
+	background-color: white;
+	color: black;
+	padding: 5px 10px 5px 10px;
+	border: black 3px solid;
+}
