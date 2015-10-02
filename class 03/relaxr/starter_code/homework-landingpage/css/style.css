@@ -1,0 +1,202 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Terrie Young
+Developer @terrieyoung in DC FEWD 17
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+html {
+ box-sizing: border-box;
+}
+​*, *​:before, *:after {
+ box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+.benefits-container {
+  background: #f0efef;
+  padding: 20px 30px;
+}
+
+.benefits {
+  max-width: 50%;
+  padding: 0px 10px
+}
+
+.quote {
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+}
+
+.action {
+  background: yellow;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.sign-up {
+  background: url(../images/testimonial_bg.jpg);
+  font-size: 12px;
+  color: white;
+  margin: 0px;
+ }
+
+ .center {
+  text-align: center;
+  padding: 30px 0px 10px 0px;
+  }
+
+.copyright {
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0px 30px 0px;
+}
+
+.socialmedia {
+  color: white;
+  letter-spacing: 40px;
+  text-align: center;
+  padding: 30px 20px;
+  }
+
+/******************************************
+/* BASE STYLES
+
+NOTE: Open Sans didn't seem to work or at least I didn't think so so I used lighter, bold, bolder
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+   }
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+
+header {
+  padding-bottom: 200px;
+  text-align: center;
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: left;
+  color: #f9e42e;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 100px;
+  margin: 0px;
+}
+
+header p {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+button {
+  font-size: 14px;
+  font-weight: bolder;
+  color: black;
+  border: 0px;
+  border-radius: 5px;
+  background: yellow;
+  width: 150px;
+  padding: 5px 10px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+li {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+blockquote {
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  padding: 40px 100px;
+  margin: 0px;
+}
+
+blockquote span {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: black;
+  padding: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
