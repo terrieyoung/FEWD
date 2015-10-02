@@ -29,6 +29,7 @@ img {
 hr {
 	margin-top: 30px; 
 	margin-bottom: 30px
+	border-color: red;
 }
 nav {
 	font-family: sans-serif;
