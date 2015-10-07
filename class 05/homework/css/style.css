@@ -1,0 +1,222 @@
+/*
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Terrie Young
+Developer @terrieyoung in DC FEWD 17
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+html {
+ box-sizing: border-box;
+}
+​*, *​:before, *:after {
+ box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+.first-letter {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.first-article {
+  float: left;
+  width: 60%;
+}
+
+.second-article {
+  float: left;
+  width: 60%;
+}
+
+.aside {
+
+  float: right;
+  clear: both;
+}
+
+ .center {
+  color: #f9e42e
+  text-align: center;
+  padding: 30px 0px 10px 0px;
+  }
+
+.copyright {
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0px 30px 0px;
+}
+
+.socialmedia {
+  color: white;
+  letter-spacing: 40px;
+  text-align: center;
+  padding: 30px 20px;
+  }
+
+/******************************************
+/* BASE STYLES
+
+NOTE: Open Sans didn't seem to work or at least I didn't think so so I used lighter, bold, bolder
+/*******************************************/
+
+body {
+     color: #333;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+   }
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+
+header {
+  background-color: #000019;
+  padding: 10px;
+  height: 125px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: left;
+  color: white;
+  padding-top: 20px;
+  padding-left: 30px;
+  margin: 0px;
+  float: left;
+}
+
+nav {
+  color: yellow;
+  font-size: 18px;
+  font-weight: 600;
+  width: 50%;
+  padding: 30px;
+  float: right;
+  clear: top;
+}
+
+ul {
+  margin: 0px;
+  float: left;
+}
+
+li {
+  color: yellow;
+  text-align: center;
+  list-style: none;
+  padding: 5px 30px;
+  float: left;
+}
+
+button {
+  font-size: 14px;
+  font-weight: bolder;
+  color: black;
+  border: 0px;
+  border-radius: 5px;
+  background: yellow;
+  width: 150px;
+  padding: 5px 10px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 30px;
+}
+
+p {
+  font-size: 13px;
+  font-weight: lighter;
+  margin-left: 30px;
+}
+
+p:first-letter {
+  font-size: 60px;
+  font-weight: 800;
+  padding-right: 5px;
+  margin: 0px;
+  float: left;
+  clear: both;
+}
+
+img {
+  margin: 30px;
+  width: 100%;
+}
+
+blockquote {
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  padding: 40px 100px;
+  margin: 0px;
+}
+
+blockquote span {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background-color: #000019;
+  padding: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
