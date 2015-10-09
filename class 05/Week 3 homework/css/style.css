@@ -1,3 +1,10 @@
+/********************
+Project: Week 3 homework--Relaxr Blog
+Developer: Terrie Young
+Class: FEWD-DC-17, GA
+*******************/
+
+
 /*************
 *  Utility
 **************/
@@ -29,81 +36,19 @@
 *  Base
 **************/
 
-body{	
-  color: #333;
-  font-family: helvetica, arial, sans-serif;
-  font-size: 18px;
+body {	
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
   line-height: 1.5;
-  background: #EEE;
+  background-color: #f0efef;
+  width: 960px;
   margin: 0px;
 }
 
-h1{
-	font-size: 32px;
-  font-weight: 600;
-  color: white;
-  float: left;
-  padding: 0px 40px;
-}
-
-h2 {
-  font-size: 28px;
-  color: #003;
-  font-weight: 600;
-  padding-top: 20px;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 800;
-}
-
-p {
-  font-size: 18px;
-}
-
-a {
-  font-size: 14px;
-  font-weight: 600;
-  width: 60%;
-  color: #003;
-  text-decoration: none;
-  text-align: right;
-} 
-
-ul{
-  margin: 0;
-  padding: 5px 5px 5px 30px;  
-}
-li{
-  display: inline-block;
-  list-style: none;
-  padding: 5px 10px;
-  margin: 10px;
- }
-
-article img {
-  width: 100%;
-}
-/*************
-* Navigation
-**************/
-
-nav {
-  font-size: 14px;
-  color: yellow;
-  padding: 20px 40px 0px 0px;
-  float: left;
-}
-
-
-
-/*************
-*  Layout
-**************/
-
 header {
-  background: #003;
+  background: #033048;
   float: left;
   width: 100%;
   max-height: 100px;
@@ -112,32 +57,28 @@ header {
 article {
   padding: 20px;
   float: left;
-  width: 60%;
+  width: 660px;
 }
 
-section {
-  background: yellow;
-  color: black;
-  text-align: center;
-  padding: 30px;
-  float: left;
+article img {
   width: 100%;
-  height: 115px;
 }
 
-button {
-  background: #003;
-  color: white;
-  font-weight: 800;
-  font-size: 24px;
-  padding: 10px 5px;
-  width: 300px;
-  border: none;
-}
 aside {
-  float: right;
-  width: 30%;
+  float: left;
+  width: 240px;
   text-align: left;
+  margin: 0px 10px;
+}
+
+aside p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+aside a {
+  font-size: 22px;
+  font-weight: 600;
 }
 
 aside img {
@@ -145,7 +86,7 @@ aside img {
 }
 
 footer {
-  background: #003;
+  background: #121212;
   text-align: center;
   width: 100%;
   min-height: 200px;
@@ -153,40 +94,137 @@ footer {
   clear: both;
 }
 
-.article {
-  border-bottom: 1px solid black;
-  padding-bottom: 20px;
-  min-height: 150px;
-  margin: 20px;
+
+/*************
+* Navigation
+**************/
+
+nav {
+  font-size: 24px;
+  font-weight: 400;
+  color: #f9e42e;
+  padding: 10px 10px;
+  float: left;
 }
 
-.categories {
-  background: yellow;
-  border: 0px;
-  padding: 20px;
-  min-height: 150px;
-  margin: 20px;
+nav li {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f9e42e;
 }
 
-.ad {
-  background: white;
+
+/*************
+*  Layout
+**************/
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  line-height: 1;
+  float: left;
+  padding: 10px 30px 0px 30px;
+  margin-right: 100px;
+}
+
+h2 {
+  font-size: 40px;
+  color: #033048;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  font-size: 24px;
+  font-weight: 600;
+  width: 60%;
+  color: #033048;
+  text-decoration: none;
+  text-align: right;
+} 
+
+ul{
+  margin: 0;
+  padding: 5px 5px 5px 30px;  
+}
+
+li{
+  display: inline-block;
+  list-style: none;
+  padding: 5px 10px;
+  margin: 10px;
+ }
+
+aside ul {
+  padding: 0px;
+}
+
+aside li {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0px;
+  margin: 0px;
+}
+
+aside img {
+  padding: 30px 0px;
+}
+
+section {
+  background: #f9e42e;
+  color: black;
   text-align: center;
-  min-height: 400px;
-  margin: 20px;
+  padding: 30px;
+  float: left;
+  width: 100%;
+  height: 90px;
+  margin-top: 50px;
+  clear: both;
+}
+
+section a {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  width: 150px;
+  height: 60px;
+  padding: 5px 40px;
+  background: #033048;
+}
+
+footer img {
+  padding: 0px 20px;
+}
+.more {
+  padding-left: 450px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid black;
+  padding: 0px 0px 20px 0px;
 }
 
 .center {
   font-size: 24px;
   font-weight: 800;
   text-align: center;
-  color: yellow;
+  color: #f9e42e;
   padding: 20px 0px 30px 0px;
 }
 
 .socialmedia {
   color: white;
-
-  padding: 30px 30px;
 }
 
 .copyright {
@@ -194,5 +232,5 @@ footer {
   font-size: 9px;
   font-weight: 600;
   text-align: center;
-  padding: 20px 0px 30px 0px;
+  padding: 20px 0px 10px 0px;
 }

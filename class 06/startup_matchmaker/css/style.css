@@ -1,0 +1,153 @@
+/* Box Sizing */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+/* Clear Class */
+.clear{
+	overflow: auto;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+header {
+	background: #003;
+	float: left;
+	max-height: 150px;
+	width: 100%;
+	border-bottom: 2px solid yellow;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+	font-weight: 800;
+	padding: 20px 0px 0px 20px;
+	color: yellow;
+	margin: 0 auto;
+	float: left;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-style: 600;
+	font-size: 18px;
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+
+ul {
+
+}
+
+li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 2%;
+}
+
+header ul {
+	float: right;
+	width: 80%;
+}
+
+header li {
+	float: left;
+	margin-right: 2%;
+}
+
+header li, a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+
+header a {
+	padding: 5px;
+}
+
+header li:first-child a, header li:nth-child(2) {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+}
+blockquote {
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-size: 18px;
+	text-align: center;
+	background: #eee;
+	width: 100%;
+	padding: 20px 0px 20px 0px;
+	margin: 0 auto;
+	clear: both;
+}
+
+aside {
+	padding: 0px 20px;
+	margin: -350px 30px 0px 0px;
+	width: 40%;
+	background-color: rgba(255, 255, 255, .8);
+	border: 1px solid black;
+	float: right;
+	height: 250px;
+}
+
+
+.class="navBold" {
+	font-weight: 800;
+}
+
+.background {
+	background: url(../images/coworking.jpg) no-repeat center center #003;
+	height: 400px;
+}
+
+.createProfile {
+	font-family: 'Open Sans Pro', sans-serif;
+	background: yellow;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 10px 10px;
+	width: 100%;
+	height: 50px;
+	text-decoration: none;
+}
+
+.signUp {
+
+}
+
+.startSearch {
+
+}
+
+.info {
+
+}
+
+.copyright {
+
+}
