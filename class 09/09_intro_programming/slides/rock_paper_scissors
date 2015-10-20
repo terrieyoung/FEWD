@@ -1,0 +1,22 @@
+choose_hand can be rock, paper or scissors
+
+player1 =  choose_hand
+player2 = choose_hand
+
+repeat 3x
+
+	if player1 = player2
+		tie!
+
+	if (player1 = rock) and (play2 = paper)
+		player1 wins!
+
+	if (player1 = scissors) and (play2 = rock)
+		player2 wins!
+
+count number wins for each player
+	
+If player1 wins > player2
+	player1 wins the game!
+else
+	player2 wins the game!
