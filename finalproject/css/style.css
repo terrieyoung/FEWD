@@ -31,7 +31,7 @@
 
 body {
   font-family: 'Noto Serif', serif;
-  font-size: 18px;
+  font-size: 14px;
   color: black;
 }
 
@@ -46,6 +46,11 @@ header {
   background: gray;
 }
 
+header logo {
+  font-size: 2em;
+  color: '1B5E20';
+
+}
 h1 {
   font-size: 24px;
   font-weight: 800;
