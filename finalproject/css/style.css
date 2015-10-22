@@ -31,7 +31,7 @@
 
 body {
   font-family: 'Noto Serif', serif;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
 }
 
@@ -40,31 +40,47 @@ LAYOUT
 ***********/
 
 header {
-  margin: 10px;
+  color: white;
   width: 100%;
-  padding: 20px;
-  background: gray;
+  height: 75px;
+  padding: 15px 30px;
+  background: green;
 }
 
-header logo {
-  font-size: 2em;
-  color: '1B5E20';
-
-}
-h1 {
-  font-size: 24px;
-  font-weight: 800;
+.welcome {
+  padding-bottom: 200px;
   text-align: center;
+  background: url(images/random_island_aerial.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
 }
+
+.logo {
+  font-size: 2em;
+  
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+ }
+
+header a:hover {
+  color: white;
+ }
 
 nav {
-  font-size: 14px;
+  font-size: .7rem;
   font-weight: 300;
   text-align: center;
+  display: inline-block;
+  padding: 0px 20px;
+  float: right;
 }
 
 ul {
   padding: 0px;
+    float: left;
+  display: block;
 }
 li {
   list-style: none;
