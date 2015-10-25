@@ -38,7 +38,7 @@ p span {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 900;
-	background: yellow;
+	background: #FFF176;
 	color: black;
 	display: block;
 	text-align: center;
@@ -62,7 +62,7 @@ p span {
 }
 #page-header h1 {
 	float: left;
-	color: yellow;
+	color: #FFF176;
 	font-size: 3em;
 }
 
@@ -77,16 +77,7 @@ p span {
 	padding: 30px 15px;
 }
 #page-header nav li a:hover {
-	color: yellow;
-}
-#page-header nav li.active a {
-	background: #666;
-}
-#page-header nav strong {
-	font-family: 'Oswald', sans-serif;
-	text-transform: uppercase;
-}
-#page-header nav strong a {
+	color: #FFF176;
 }
 
 .banner {
@@ -106,23 +97,24 @@ p span {
 }
 
 .touts {
-	background: beige;
+	background: #FFF59D;
 	overflow: hidden;
 	width: auto;
-	padding: 50px 0px 30px 0px;
+	padding: 50px 20px 30px 20px;
 	}
 
 .tout1 {
 	float: left;
 	width: 44%;
 	padding: 0% 2% 2% 2%;
+	margin-right: 30px;
 }
 .tout1 img {
 	width: 100%;
 	margin: 0px 0px 10px 0px;
 }
 .tout1 .button {
-	background: purple;
+	background: #4A148C;
 	color: white;
 }
 
@@ -136,7 +128,7 @@ p span {
 	margin: 0px 0px 10px 0px;
 }
 .tout2 .button {
-	background: green;
+	background: #1B5E20;
 	color: white;
 }
 
@@ -181,12 +173,13 @@ Services Section
 End Services Section
 ***************/
 
+
 footer {
 	clear: both;
 }
 
 .bottomPage {
-	background-color: green;
+	background-color: #1B5E20;
 	height: 70px;	
 	text-align: center;
 	color: white;
@@ -203,7 +196,7 @@ footer {
 }
 
 .email a:hover {
-	color: yellow;
+	color: #FFF176;
 }
 
 /************
