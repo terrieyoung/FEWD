@@ -18,12 +18,12 @@ function hideReadMore() {
   $('.readmore').hide();
 }
 
-  //have the text in the ```<p>``` tag slide down along with a "Read Less" link in the blog post using  ```$.slideDown()``` and ```$.show()```
-  //hide the "Read More" link using ```$.hide()```
+	//have the text in the ```<p>``` tag slide down along with a "Read Less" link in the blog post using  ```$.slideDown()``` and ```$.show()```
+	//hide the "Read More" link using ```$.hide()```
 
 // If a user clicks "Read Less" on the primary column:
-  //have the ```<p>``` slide up and hide the "Read Less" link using  ```$.slideUp()``` and ```$.hide()```
-  //show the "Read More" link using ```$.show()```
+	//have the ```<p>``` slide up and hide the "Read Less" link using  ```$.slideUp()``` and ```$.hide()```
+	//show the "Read More" link using ```$.show()```
 $('.readless').click(slideUpText)
 $('.readless').click(showReadMore)
 $('.readless').click(hideReadLess)
