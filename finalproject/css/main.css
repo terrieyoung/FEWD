@@ -1,3 +1,27 @@
+/**************
+Project: Final Projectg, FEWD-DC-17, General Assembly
+Author: Terrie Young
+**************/
+
+/*************
+*  Utility
+**************/
+
+/* Clear Class */
+.clear{
+	overflow: auto;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
 body {
 	font-family: 'Merriweather', serif;
 	font-weight: 400;
@@ -38,9 +62,11 @@ p span {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 900;
+	font-size: 1.5em;
 	background: #FFF176;
 	color: black;
 	display: block;
+	letter-spacing: .1em;
 	text-align: center;
 	padding: 12px;
 	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
@@ -97,13 +123,16 @@ p span {
 	box-shadow: 0 0 5px rgba(0,0,0,.75);
 }
 
+/***************
+Jewelry and Books Sections
+****************/
+
 .touts {
 	background: #FFF59D;
 	overflow: hidden;
 	width: auto;
 	padding: 50px 20px 30px 20px;
-	}
-
+}
 .tout1 {
 	float: left;
 	width: 44%;
@@ -118,7 +147,6 @@ p span {
 	background: #4A148C;
 	color: white;
 }
-
 .tout2 {
 	float: left;
 	width: 44%;
@@ -136,12 +164,11 @@ p span {
 /**********
 Services Section
 **********/
+
 .services {
 	clear: both;
 	margin: 50px 20px 50px 0px;
-	border-bottom: 1px solid gray;
 }
-
 .services1 img {
 	float: left;
 	padding-right: 20px;
@@ -157,22 +184,17 @@ Services Section
 	float: left;
 	padding-right: 20px;
 }
-
 .servicesButton {
 	clear: both;
 	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 700;
+	font-size: 1.5em;
 	width: 300px;
-	background: #FFF176;
 	color: black;
 	display: block;
-	text-align: center;
-	padding: 12px;
-	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
-	border-radius: 10px;
-	margin: 5% 30%;
+	text-align: right;
+	margin: 5% 0% 5% 60%;
 }
 
 /*****************
@@ -186,36 +208,88 @@ Favorite Charities
 .charities1 img {
 	float: left;
 	padding-right: 20px;
-	margin-right: 10px;
+	margin: 0px 30px 0px 0px;
 }
 .charities2 img {
 	float: left;
 	margin-right: 40px;
-	padding-right: 20px;
 }
 .charities3 img {
 	float: left;
 	padding-right: 20px;
+	margin-bottom: 30px;
 }
 
 /*******************
 Contact Form
 *********************/
 
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 10em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on every browsers */
+    resize: vertical;
+}
 .contactForm {
 	clear: both;
 	background: #CE93D8;
 	padding: 30px 30px;
 	font-size: 1.25em;
-
+	margin-top: 30px;
+}
+button {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+    margin-left: .5em;
+    border: 0px;
+    background: none;
 }
 .formButton {
 	clear: both;
 	font-family: 'Oswald', sans-serif;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 900;
-	width: 300px;
+	width: auto;
 	background: #FFF176;
 	color: black;
 	display: block;
@@ -223,20 +297,6 @@ Contact Form
 	padding: 12px;
 	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
 	border-radius: 10px;
-	margin: 5% 30% 0% 30%;
-}
-.name {
-	width: 25%;
-	height: 10%;
-}
-.mail {
-
-}
-.phone {
-
-}
-.msg {
-
 }
 
 
@@ -248,7 +308,10 @@ Footer Section
 footer {
 	clear: both;
 }
-
+.copyright {
+	text-decoration: none;
+	color: white;
+}
 .bottomPage {
 	background-color: #1B5E20;
 	border-top: 6px solid #4A148C;
@@ -257,16 +320,13 @@ footer {
 	color: white;
 	padding: 20px 0px;
 }
-
 .email {
 	font-size: 1.5em;
 }
-
 .email a {
 	color: white;
 	text-decoration: none;
 }
-
 .email a:hover {
 	color: #FFF176;
 }
@@ -278,14 +338,13 @@ responsive
 @media screen and (max-width: 500px) {
 	html {
 		font-size: 5px;
-	}
 }
 
 #hamburger {
   width: 60px;
   position: relative;
   cursor: pointer;
-  border: 3px solid $primary;
+  border: 3px solid white;
   border-radius: 4px;
 }
 
@@ -294,7 +353,7 @@ responsive
   position: absolute;
   height: 4px;
   width: 60%;
-  background: $primary;
+  background: white;
   opacity: 1;
   left: 50%;
   margin-top: 29%;
@@ -310,4 +369,6 @@ responsive
 
 #hamburger span:nth-child(3) {
   top: 16px;
+}
+
 }
