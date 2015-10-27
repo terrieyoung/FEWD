@@ -13,11 +13,11 @@
  * We've started you off, replace the sec
  */
  
-	function question1(){
-		$("replaceMe").css("replaceMe", "replaceMe");
-	}
+//	function question1(){
+//		$("p").css("color", "blue");
+//	}
 
-	$("#button1").click(question1);
+//	$("#button1").click(question1);
 
 /**
  * Question 2:
@@ -36,11 +36,10 @@
  * Using jQuery change the content to read "True Fact".
  */
 
-	// function replaceMe(){
-	// 	$("replaceMe").html("replaceMe");
-	// }
+//	function question3(){
+//	}
 
-	// $("#button1").click(question3);
+//	 $("button1").click(question3);
 
 
 //SECTION 2: Now you are on your own. Write the necessary code to accomplish the following.
@@ -49,14 +48,21 @@
  * When button 2 is clicked, change the background color of the whole page to "pink"
  */
 
+function makeBackgroundPink() {
+$('body').css('background', 'pink');
+}
 
+$('#button2').click(makeBackgroundPink);
 
 /**
  * Question 5:
  * When button 2 is clicked, change the color of all h2's to "green"
  */
 
+//	$('h2').css('color', 'green')
+//	}
 
+//	$('#button2').click('colorGreen');
 
 /**
  * Question 6:
