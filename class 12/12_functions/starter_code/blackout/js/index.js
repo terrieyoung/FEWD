@@ -1,6 +1,6 @@
 $(document).ready (function() {
 	//setting up a variable to store whether the lights are on or off
-	var lightsOn = 'true';
+	var lightsOn === 'true';
 
 	$('#light_switch').click(toggleLights;
 	
@@ -23,3 +23,4 @@ $(document).ready (function() {
 		}	
 	}
 )};
+
