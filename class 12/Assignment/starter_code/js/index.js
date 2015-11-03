@@ -20,27 +20,63 @@ Call ```$.val()``` on inputs to get the string value of your user's input
 Take a look at what your final product should look like before and after:
 *********/
 $(document).ready (function() {
+// Set up city variables in arrays for multiple selections of each city
+  var nyc = ["nyc", "New York", "New York City", "NYC"];
+  var la = ["LAX", "LA", "Los Angeles"];
+  var austin = ["Austin", "ATX"];
+  var sanFran = ["San Fransisco", "SF", "san fran", "Bay Area"];
+  var sydney = ["Sydney", "SYD"];
+  
+  // Establish that the button will do something on click while changing a background image
+  // Within same function, match city variables to background images representative of each city; i.e. sanFran = $('.wrapper').css('background-image', 'url("your_url_here")');
 
-  var city = 'nyc';
-         
-  var city === 'true';
-
-  $('#submit-btn').click(toggleCity);
-
-  function toggleCity(){
-    if (city === 'true'){
-      $('body').css('background', 'url(../images/nyc.jpg');
-
-      city === 'false'){
-
-      $('body').css('background', 'default');
-
-      city === 'true';
+ // $('.button').on("click", function(){
+ //   $('.wrapper').css('background-image', 'url("http://i.huffpost.com/gen/2364914/images/o-GRUMPY-CAT-facebook.jpg")')
+  })
+  
+  // Make sure all strings passed through input are collected
+  // Make sure all collected strings are lowercase for ease-of-coding
+  // Match now-converted lowercase strings to array of city variables-- WHILE loop
+  //$('input').on('click', function(){
+    choice = $(input).val();
+    choice.toLowercase();
+    
+    while (nyc = true) {
+      // change background-image code here
+        $('body').css('background-image', 'url("images/nyc.jpg")')
+        });
+   }
+    
+    while (la = true) {
+      // change background-image code here
+       $('body').css('background-image', 'url("images/la.jpg")')
+        })  
     }
-  }
-});
-
-
+    
+    while (austin = true) {
+      // change background-image code here
+      $('body').css('background-image', 'url("../images/austin.jpg")')
+    })
+}
+    
+    while (sanFran = true) {
+      // change background-image code here
+         $('body').css('background-image', 'url("../images/sanFran.jpg")')
+        })
+    }
+    
+    while (sydney = true) {
+           $('body').css('background-image', 'url("../images/sydney.jpg")')
+        })
+      // change background-image code here
+    }
+    
+  });
+  
+  // Extra Credit
+  // In case the inputed string isn't part of your variables, make an alert box pop up that tells the user they need to get better at spelling
+  // HINT : If / else loop
+  
 
 
 /************$(document).function() {
