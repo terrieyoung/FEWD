@@ -1,50 +1,34 @@
+/***********
+//When a suer hits the submit button, we get the city that the user entered and test to see what city it is. If city is New York update the backgroiund to the nyc image. If the city is San Francdiso update the background to the sanfran image...
+*********/
+$(document).ready(function() {
+  var city;
 
-$(document).ready (function() {
-//Call ```$.val()``` on inputs to get the string value of your user's input
-//- Store user input in ```var city```
- 
+$('#submit-btn').click(changeBackground);
+  
+  function changeBackground(event){
+    event.preventDefault();
+// store city input as variable
+  city = $('#city-type').val();
+  if ( city === 'New York' || city === 'NYC' || city === 'New York City'){
+      $('body').attr('class', 'nyc');{
 
-//identify variables
-  var nyc = ["nyc", "New York", "New York City", "NYC"];
-  var la = ["LAX", "LA", "Los Angeles"];
-  var austin = ["Austin", "ATX"];
-  var sanfran = ["San Fransisco", "SF", "san fran", "Bay Area"];
-  var sydney = ["Sydney", "SYD"];
+      } else if (city === 'LA' || city === 'Los Angeles' || 'LAX'){
+      	$('body').attr('class', 'la');{
 
-//- Use $.on(submit) or ```$.click``` to figure out when the user clicks the "submit" button
-  $('#submit-btn').on('click', function{
-  city = $(input).val();
-   city.toLowercase();
-      event.preventDefault();
-  });
-
-//- Create ```if / else if / else``` conditionals to control the flow of your application
-  if ('#city-type') = nyc {
-      // change background-image code here
-        $('body').css('background-image', 'url("images/nyc.jpg")')
-        });
-     }
-      
-     else if ('#city-type') = sanfran {
-        // change background-image code here
-          $('body').css('background-image', 'url("images/sanfraN.jpg")')
-          });
-     }
-      
-      else if ('#city-type') = la {
-      // change background-image code here
-        $('body').css('background-image', 'url("images/la.jpg")')
-        });
-
-    else if ('#city-type') = austin {
-      // change background-image code here
-        $('body').css('background-image', 'url("images/nyc.jpg")')
-        });
-   }
-    
-    else ('#city-type') = sydney {
-      // change background-image code here
-        $('body').css('background-image', 'url("images/nyc.jpg")')
-        });
+      } else if (city === 'San Fran' || city === 'Frisco' || 'San Francisco'){
+      	$('body').attr('class', 'sanfran');{
+      		
+      }else if (city === 'Austin' || city === 'Texas'){
+      	$('body').attr('class', 'austin');{
+      		
+      }else if (city === 'Sydney' || city === 'SYD'){
+      	$('body').attr('class', 'sydney');
+      		
       }
- });
+
+  }
+
+ }
+  
+});

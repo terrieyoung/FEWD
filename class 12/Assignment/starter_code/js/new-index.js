@@ -22,13 +22,13 @@ $(document).ready(function() {
     
     while (nyc = true) {
       // change background-image code here
-        $('body').css('background-image', 'url("images/nyc.jpg")')
+        $('body').css('background-image', 'url("../images/nyc.jpg")')
         });
    }
     
     while (la = true) {
       // change background-image code here
-       $('body').css('background-image', 'url("images/la.jpg")')
+       $('body').css('background-image', 'url("../images/la.jpg")')
         })  
     }
     

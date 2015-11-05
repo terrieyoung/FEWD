@@ -183,6 +183,16 @@ Jewelry and Books Sections
 	left:0; top:0; 
 }
 
+.fadein2 { 
+	position: relative; 
+	width:auto; 
+	height:425px;
+}
+.fadein2 img { 
+	position:absolute; 
+	left:0; top:0; 
+}
+
 /**********
 Services Section
 **********/
@@ -191,23 +201,40 @@ Services Section
 	clear: both;
 	margin: 5% 15% 5% 15%;
 }
+.services1 {
+	float: left;
+	margin-right: 10%;
+	margin-bottom: 10%;;
+	width: auto;
+}
 .services1 img {
 	float: left;
-	padding-right: 1rem;
-	margin-right: 1rem;
+	padding-top: 20px;
+}
+.services2 {
+	float: left;
+	margin-right: 10%;
+	margin-bottom: 10%;;
+	width: auto;
 }
 .services2 img {
 	float: left;
-	margin-right: 1.5rem;
-	padding-right: 1.5rem;
+	padding-top: 20px;
+}
+.services3 {
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 10%;;
+	width: auto;
 }
 .services3 img {
 	float: left;
+	padding-top: 20px;
 }
 .servicesButton {
 	clear: both;
 	font-family: 'Oswald', sans-serif;
-	text-decoration: none;
+	
 	font-weight: 700;
 	font-size: 1.5em;
 	width: 300px;
@@ -247,7 +274,7 @@ Contact Form
 form {
     /* Just to center the form on the page */
     margin: 0 auto;
-    width: 400px;
+    width: 600px;
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid #CCC;
@@ -259,7 +286,7 @@ form div + div {
 label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: inline-block;
-    width: 90px;
+    width: 100px;
     text-align: right;
 }
 input, textarea {
@@ -268,7 +295,7 @@ input, textarea {
     font: 1em sans-serif;
 
     /* To give the same size to all text field */
-    width: 300px;
+    width: 475px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
@@ -319,6 +346,13 @@ button {
 	border-radius: 10rem;
 }
 
+/**************
+Go To Top of Page
+***********/
+.goTop {
+
+	}
+
 
 /*************
 Footer Section
@@ -355,7 +389,7 @@ footer {
 responsive
 ***********/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
 #hamburger {
   width: 60px;
