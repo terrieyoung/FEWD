@@ -38,7 +38,7 @@ h2 {
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 1;
-	margin: 0% 0% 2% 0%;
+	margin: 0 0 20px 0;
 }
 h3 {
 	font-size: 1.25rem;
@@ -85,7 +85,6 @@ Header
 	width: auto;
 	padding: 0 3%;
 }
-
 #page-header a {
 	color: inherit;
 	text-decoration: none;
@@ -149,14 +148,14 @@ Jewelry and Books Sections
 .shops p {
 	padding-top: 80%;
 }
+.shops img {
+	width: 90%;
+}
 .shop1 {
 	float: left;
 	width: 44%;
 	padding: 2%;
 	margin-right: 30px;
-}
-.shop1 img {
-	width: 90%;
 }
 .shop1 .button {
 	background: #4A148C;
@@ -166,9 +165,6 @@ Jewelry and Books Sections
 	float: left;
 	width: 44%;
 	padding: 2%;
-}
-.shop2 img {
-	width: 90%;
 }
 .shop2 .button {
 	background: #1B5E20;
@@ -200,37 +196,16 @@ Services Section
 
 .services {
 	clear: both;
-	margin: 2% 15% 2% 15%;
+	margin: 2% 17% 0% 17%;
 }
-.services1 {
+.services1, .services2, .services3 {
 	float: left;
-	margin-right: 10%;
-	margin-bottom: 2%;
+	margin: 2% 10% 0% 0%;
 	width: auto;
 }
-.services1 img {
+.services img {
+	margin-bottom: 10%;
 	float: left;
-	padding-top: 20px;
-}
-.services2 {
-	float: left;
-	margin-right: 10%;
-	margin-bottom: 2%;
-	width: auto;
-}
-.services2 img {
-	float: left;
-	padding-top: 20px;
-}
-.services3 {
-	float: left;
-	margin-right: 1%;
-	margin-bottom: 2%;
-	width: auto;
-}
-.services3 img {
-	float: left;
-	padding-top: 20px;
 }
 .servicesButton {
 	clear: both;
@@ -418,6 +393,7 @@ responsive
 @media screen and (max-width: 1200px) {
 
 #hamburger {
+  float: right;
   width: 60px;
   height: 60px;
   position: relative;
@@ -433,7 +409,7 @@ responsive
   background: white;
   opacity: 1;
   left: 50%;
-  margin-top: 29%;
+  margin: 75% 30% 75% 0;
 }
 
 #hamburger span:nth-child(1) {
