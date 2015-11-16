@@ -12,28 +12,30 @@ $(document).ready(function(){
 //define reactions to events
 
 	function goToNextAnimal() {
-		i++;
-
+	i++;
 		console.log('index : ' + i);
 
 		var nextAnimal = animals[i];
-
 		console.log('animal: ' + nextAnimal);
+
+//reaction to the event
 
 		$('#image-to-vote-on').attr('src', 'images/' + nextAnimal);
 
 	}
 
-	function goToPreviousAnimal() {
+	function goToNextAnimal() {
 		i--;
+		console.log('index : ' + i);
 
 		var previousAnimal = animals[i];
+		console.log('animal: ' + previousAnimal);
 
-		$('#image-to-vote-on').attr('src', 'images/' + previousAnimal);
+//reaction to the event
 
+		$('#image-to-vote-on').attr('src', 'images/' - previousAnimal);
 
 	}
-
 	
 
 });
