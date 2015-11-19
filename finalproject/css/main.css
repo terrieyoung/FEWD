@@ -2,6 +2,9 @@
 Project: Final Projectg, FEWD-DC-17, General Assembly
 Author: Terrie Young
 **************/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 /*************
 *  Utility
@@ -36,9 +39,11 @@ h1 {
 }
 h2 {
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: 900;
 	line-height: 1;
+	color: #1B5E20;
 	margin: 0 0 20px 0;
+	text-transform: uppercase;
 }
 h3 {
 	font-size: 1.25rem;
@@ -200,12 +205,11 @@ Services Section
 }
 .services1, .services2, .services3 {
 	float: left;
-	margin: 2% 10% 0% 0%;
-	width: auto;
+	width: 33.3%;
+	text-align: center;
 }
 .services img {
 	margin-bottom: 10%;
-	float: left;
 }
 .servicesButton {
 	clear: both;
@@ -217,6 +221,18 @@ Services Section
 	display: block;
 	text-align: right;
 	margin: 1% 0% 1% 60%;
+}
+.proofreading, .research, .transcription {
+	float: left;
+	width: 85%
+}
+.services-page img {
+	float: left;
+	width: 10%;
+	padding: 1% 5% 0% 0%;
+}
+.services-page h2 {
+	padding-top: 2%;
 }
 
 /*******************
@@ -236,17 +252,15 @@ form div + div {
 }
 label {
     /* To make sure that all labels have the same size and are properly aligned */
-    display: inline-block;
-    width: 20%;
-    text-align: right;
-}
+    display: block;
+ }
 input, textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
     font: sans-serif;
 
     /* To give the same size to all text field */
-    width: 70%;
+    width: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
@@ -265,7 +279,7 @@ textarea {
     height: 10rem;
 
     /* To allow users to resize any textarea vertically
-       It does not work on every browsers */
+       It does not work on every browser */
     resize: vertical;
 }
 .contactForm {
@@ -305,7 +319,12 @@ Favorite Charities
 	clear: both;
 	margin: 50px 20px 50px 0px;
 }
-.charities1 img {
+.charities a {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 20px;
+}
+/*.charities1 img {
 	float: left;
 	padding-right: 20px;
 	margin-right: 40px;
@@ -318,7 +337,7 @@ Favorite Charities
 	float: left;
 	padding-right: 20px;
 	margin-bottom: 30px;
-}
+}*/
 
 /********
 Back to Top Button
@@ -424,4 +443,11 @@ responsive
   top: 16px;
 }
 
+.button {
+	font-size: 1.2rem;
+	letter-spacing: 0;
+	padding: .8rem;
+	box-shadow: inset 0 .3% 0 rgba(0,0,0,.2);
+	border-radius: 10rem;
+}
 }

@@ -104,12 +104,12 @@ Services Section
 	float: left;
 	width: 85%
 }
-.services img {
+.services-page img {
 	float: left;
 	width: 10%;
 	padding: 1% 5% 0% 0%;
 }
-.services h2 {
+.services-page h2 {
 	padding-top: 2%;
 }
 

@@ -5,9 +5,10 @@
 	<title>Professional Services</title>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,900,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/services.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 	<body>
+		<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
 		<header id="page-header">
 			<h1><a href="index.html">Random Island</a></h1>
 			<div id="hamburger">
@@ -18,20 +19,19 @@
 			<nav>
 				<ul>
 					<li><a href="index.html">About</a></li>
-					<li><a href="#">Jewelry</a></li>
-					<li><a href="#">Books</a></li>	
-					<li><a href="services.html">Services</a></li>
-					<li><a href="#">Charities</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="index.html">Jewelry</a></li>
+					<li><a href="index.html">Books</a></li>
+					<li><a href="#form">Contact Us</a></li>
+					<li><a href="index.html">Charities</a></li>
 				</ul>
 			</nav>
 		</header>
 		
 		<div class="wrapper">
-			<section class="services">
+			<section class="services-page">
 				<h1>Professional Services</h1>
 				<p>Need text for this area explaining the services and why to hire Random Island.</p>
-					<div class="services">
+					<div class="services-page">
 						<img src="images/proofreading.png" alt="Icon to depict proofreading services with books and magnifying glass">
 					</div>
 					<div class="proofreading">
@@ -46,12 +46,12 @@
 								<span>Project:<span> text about the project.</li>
 						</ul>
 					</div>
-					<div class="services">
+					<div class="services-page">
 						<img src="images/research.png" alt="Icon to depict historical reasearch services with stack of books">
 					</div>
 					<div class="research">
-						<h2>Historical Research</h2>
-							<p>This is where you need to get into specifics about your proofreading services.</p>
+						<h2>Historical Research and Editing</h2>
+							<p>Random Island offers an array of historical research and editing services, including: transcription of historic documents; spoken-word transcription of oral histories; researching Civil War soldiers and surgeons; proofreading; copy editing; cataloging of historical artifacts; historical research; and assistance with publishing books and journals.</p>
 						<ul>
 							<li><span>Client:</span> #<br />
 								<span>Project:<span> text about the project.</li>
@@ -61,7 +61,7 @@
 								<span>Project:<span> text about the project.</li>
 						</ul>
 					</div>
-					<div class="services">
+					<div class="services-page">
 						<img src="images/transcription.png" alt="Icon to depict historical transcription services with paper and pen">
 					</div>
 					<div class="transcription">
@@ -78,7 +78,7 @@
 					</div>
 			</section>
 
-			<section class="contactForm">
+			<section class="contactForm" id="form">
 				<form action="/my-handling-form-page" method="post">
 				    <h2>Contact Us</h2>
 				    <div>
