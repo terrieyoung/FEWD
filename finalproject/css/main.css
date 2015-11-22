@@ -1,21 +1,18 @@
 /**************
-Project: Final Projectg, FEWD-DC-17, General Assembly
+Project: Final Project, FEWD-DC-17, General Assembly
 Author: Terrie Young
 **************/
-*, *:before, *:after {
-  box-sizing: border-box;
-}
 
 /*************
 *  Utility
 **************/
 
-/* Clear Class */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 .clear{
 	overflow: auto;
 }
-
-/* Clearfix */
 .clearfix:after {
   content: ".";
   display: block;
@@ -25,20 +22,24 @@ Author: Terrie Young
   height: 0;
 }
 
+/************
+LAYOUT
+*************/
+
 body {
 	font-family: 'Merriweather', serif;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.5;
 	cursor: default;
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	line-height: 1;
 }
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 900;
 	line-height: 1;
 	color: #1B5E20;
@@ -46,7 +47,6 @@ h2 {
 	text-transform: uppercase;
 }
 h3 {
-	font-size: 1.25rem;
 	font-weight: 700;
 }
 p {
@@ -67,7 +67,7 @@ p span {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 900;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	background: #FFF176;
 	color: black;
 	display: block;
@@ -100,7 +100,6 @@ Header
 	font-size: 3rem;
 }
 #page-header nav {
-	font-size: 1.5rem;
 	float: right;
 }
 #page-header nav li {
@@ -108,7 +107,7 @@ Header
 }
 #page-header nav a {
 	display: block;
-	padding: 15px 30px;
+	padding: 32px 20px;
 }
 #page-header nav li a:hover {
 	color: #FFF176;
@@ -121,14 +120,15 @@ Banner and Welcome
 .banner {
 	background: url(../images/randomIsland_new.jpg) center center no-repeat;
 	background-size: cover;
+	background-color: #4A148C;
 	overflow: hidden;
 	padding: 40px 40px;
 }
 .blurb h2 {
-	font-size: 2.25rem;
+	font-size: 1.5rem;
 }
 .blurb p {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 .blurb {
 	background: rgba(255,255,255,.8);
@@ -160,7 +160,7 @@ Jewelry and Books Sections
 	float: left;
 	width: 44%;
 	padding: 2%;
-	margin-right: 30px;
+	margin: 0 50px;
 }
 .shop1 .button {
 	background: #4A148C;
@@ -205,7 +205,7 @@ Services Section
 }
 .services1, .services2, .services3 {
 	float: left;
-	width: 33.3%;
+	padding: 5px 15px;
 	text-align: center;
 }
 .services img {
@@ -228,7 +228,7 @@ Services Section
 }
 .services-page img {
 	float: left;
-	width: 10%;
+	width: 15%;
 	padding: 1% 5% 0% 0%;
 }
 .services-page h2 {
@@ -261,8 +261,7 @@ input, textarea {
 
     /* To give the same size to all text field */
     width: 100%;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+ 
 
     /* To harmonize the look & feel of text field border */
     border: 1px solid #999;
@@ -286,15 +285,31 @@ textarea {
 	clear: both;
 	background: #CE93D8;
 	padding: 30px 30px;
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	margin-top: 30px;
 }
+
+.button {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 1.25rem;
+	background: #FFF176;
+	color: black;
+	display: block;
+	letter-spacing: .1rem;
+	text-align: center;
+	padding: 1.2rem;
+	box-shadow: inset 0 .3% 0 rgba(0,0,0,.2);
+	border-radius: 10rem;
+}
+
 button {
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
 	text-transform: uppercase;
-	font-weight: 900;
-    margin-left: .5rem;
+	font-weight: 700;
     border: 0px;
     background: none;
 }
@@ -306,7 +321,7 @@ button {
 	color: black;
 	display: block;
 	text-align: center;
-	padding: 12px;
+	padding: 6px;
 	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
 	border-radius: 10rem;
 }
@@ -324,20 +339,7 @@ Favorite Charities
 	vertical-align: middle;
 	padding: 0 20px;
 }
-/*.charities1 img {
-	float: left;
-	padding-right: 20px;
-	margin-right: 40px;
-}
-.charities2 img {
-	float: left;
-	margin-right: 40px;
-}
-.charities3 img {
-	float: left;
-	padding-right: 20px;
-	margin-bottom: 30px;
-}*/
+
 
 /********
 Back to Top Button
@@ -378,18 +380,16 @@ Footer Section
 ***************/
 
 
-.bottomPage {
-	clear: both;
-	width: auto;
-}
 .copyright {
 	text-decoration: none;
 	color: white;
 }
 .bottomPage {
+	clear: both;
+	width: auto;
 	background-color: #1B5E20;
 	border-top: 6px solid #4A148C;
-	height: 70px;	
+	height: 110px;	
 	text-align: center;
 	color: white;
 	padding: 20px 0px;
@@ -408,8 +408,7 @@ Footer Section
 /************
 responsive
 ***********/
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1065px) {
 
 #hamburger {
   float: right;
@@ -419,7 +418,6 @@ responsive
   cursor: pointer;
   border-radius: 4px;
  }
-
 #hamburger span {
   display: block;
   position: absolute;
@@ -430,24 +428,57 @@ responsive
   left: 50%;
   margin: 75% 30% 75% 0;
 }
-
 #hamburger span:nth-child(1) {
   top: 0px;
 }
-
 #hamburger span:nth-child(2) {
   top: 8px;
 }
-
 #hamburger span:nth-child(3) {
   top: 16px;
 }
 
+}
+
+
+@media screen and (max-width: 640px) {
+
+#page-header h1 {
+	font-size: 2rem;
+	padding-top: 20px;
+}
+
 .button {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	font-weight: 700;
 	letter-spacing: 0;
 	padding: .8rem;
 	box-shadow: inset 0 .3% 0 rgba(0,0,0,.2);
 	border-radius: 10rem;
+}
+.shop1 {
+	width: 80%;
+	margin: 0 20px;
+}
+.shop2 {
+	width: 80%;
+	margin: 0 20px;
+}
+.servicesButton {
+	font-size: 1rem;
+	width: 100%;
+	margin: 0 30px;
+}
+#page-header h1 {
+	font-size: 2rem;
+}
+.blurb h2 {
+	font-size: 1.2rem;
+}
+.blurb p {
+	font-size: 1rem;
+}
+.blurb {
+	width: 60%;
 }
 }

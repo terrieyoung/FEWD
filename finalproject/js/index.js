@@ -26,10 +26,11 @@ $(window).scroll(function(){
         $('#scroll').fadeOut(); 
     } 
 }); 
-    $('#scroll').click(function(){ 
+
+$('#scroll').click(function(){ 
         $("html, body").animate({ scrollTop: 0 }, 600); 
         return false; 
-  });
+});
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
