@@ -1,0 +1,86 @@
+/*************
+*  Utility
+**************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.clear{
+	overflow: auto;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/************
+LAYOUT
+*************/
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.5;
+	cursor: default;
+	background: url(../images/background.png);
+}
+.container{
+	width: 75%;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.5);
+	}
+
+h2 {
+	font-size: 1em;
+}
+fieldset {
+	border: none;
+}
+legend {
+	float: left;
+	width: 20%;
+	text-align: left;
+}
+input{
+	padding: .2em;
+	border-radius: 2px;
+	box-shadow: none;
+	border: 1px solid #CCC;
+	background-color: #FBF385;
+}
+input[name="firstName"] {
+	margin-right: 10px;
+	float: left;
+
+}
+input[name="lastName"] {
+	margin-top: 5px;
+	float: left;
+	clear: both;
+}
+input[name="firstAddress"] {
+	margin-right: 10px;
+	float: left;
+	margin-bottom: 5px;
+}
+.secondAddress {
+	margin: 5px 10px 0 188px;
+	clear: both;
+}
+input[name="City"] {
+	margin-right: 10px;
+	width: 200px;
+}
+input[name="State"] {
+	margin-right: 10px;
+	width: 60px;
+}
+.wrapper {
+	float: left;
+	width: 60%;
+}

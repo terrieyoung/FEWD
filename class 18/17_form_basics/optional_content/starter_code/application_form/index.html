@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Contact Form</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+	<header>
+		<h1>Course Application</h1>
+	</header>
+	<form method="post" action="#" >
+		<h2>Your Contact Info</h2>
+			<fieldset>
+				<legend>Your Name</legend>
+				<div class="wrapper">
+					<input type="text" placeholder="First" name="firstName">
+					<input type="text" placeholder="Last" name="lastName">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Phone Number</legend>
+					<input type="text" name="area" placeholder="Area Code" maxlength="3" size="5"> - 
+					<input type="text" name="area" placeholder="###" maxlength="3" size="3"> - 
+					<input type="text" name="area" placeholder="####" maxdlength="4" size="4">
+			</fieldset>
+			<fieldset>
+				<legend>Address</legend>
+					<input type="text" name="firstAddress" placeholder="Street Address">
+					<input type="text" name="secondAddress" placeholder="Apt./Suite">
+				<div class="secondAddress">
+					<input type="text" name="City" placeholder="City">
+					<input type="text" name="State" placeholder="State">
+					<input type="text" name="Zip" placeholder="Zip">
+				</div>
+			</fieldset>
+			<h2>Skills &amp Interests</h2>
+			<label for="course">Course</label>
+					<select name="course">
+						<option value="SelectOne">Select One</option>
+						<optgroup label="Web Development">
+							<option value="frontEnd">Front End</option>
+							<option value="backEnd">Back End</option>
+						</optgroup>
+						<optgroup label="Design">
+							<option value="VisualDesign">Visual Design</option>
+							<option value="backEnd">User Experience</option>
+						</optgroup>
+					</select>
+				<label for="experience">Past Experience</label>
+					<input type="textarea" name="experience">
+			<button vlaue="save">Save Draft</button>
+				<input type="submit" name="Submit">
+		</form>
+	</body>
+</html>
