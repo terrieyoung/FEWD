@@ -68,7 +68,7 @@ p span {
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 1.25rem;
-	background: #FFF176;
+	background: #FFD54F;
 	color: black;
 	display: block;
 	letter-spacing: .1rem;
@@ -89,6 +89,7 @@ Header
 	height: 7rem;
 	width: auto;
 	padding: 0 3%;
+
 }
 #page-header a {
 	color: inherit;
@@ -96,7 +97,7 @@ Header
 }
 #page-header h1 {
 	float: left;
-	color: #FFF176;
+	color: #FFD54F;
 	font-size: 3rem;
 }
 .menu-btn div {
@@ -127,6 +128,7 @@ Header
 }
 #page-header nav {
 	float: right;
+	font-size: 1.2rem;
 }
 #page-header nav li {
 	float: left;
@@ -170,7 +172,7 @@ Banner and Welcome
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 1.25rem;
-	background: #FFF176;
+	background: #FFD54F;
 	color: black;
 	display: block;
 	letter-spacing: .1rem;
@@ -186,7 +188,7 @@ Jewelry and Books Sections
 ****************/
 
 .shops {
-	background: #FFF59D;
+	background: #FFECB3;
 	font-size: 1.1rem;
 	overflow: hidden;
 	width: auto;
@@ -250,7 +252,7 @@ Services Section
 }
 .services1, .services2, .services3 {
 	float: left;
-	padding: 5px 15px;
+	padding: 5px 30px;
 	text-align: center;
 }
 .services img {
@@ -331,7 +333,7 @@ textarea {
 }
 .contactForm {
 	clear: both;
-	background: #C8E6C9;
+	background: #E0E0E0;
 	padding: 30px 30px;
 	font-size: 1.1rem;
 	margin-top: 30px;
@@ -348,7 +350,7 @@ button {
 	clear: both;
 	font-family: 'Oswald', sans-serif;
 	width: auto;
-	background: #FFF176;
+	background: #FFD54F;
 	color: black;
 	display: block;
 	text-align: center;
@@ -478,32 +480,8 @@ responsive
 	padding-top: 20px;
 }
 .blurbButton {
+	font-size: .9rem;
 	letter-spacing: 0;
-}
-
-.button {
-	font-size: 1.1rem;
-	font-weight: 700;
-	letter-spacing: 0;
-	padding: .8rem;
-	box-shadow: inset 0 .3% 0 rgba(0,0,0,.2);
-	border-radius: 10rem;
-}
-.shop1 {
-	width: 80%;
-	margin: 0 20px;
-}
-.shop2 {
-	width: 80%;
-	margin: 0 20px;
-}
-.servicesButton {
-	font-size: 1rem;
-	width: 100%;
-	margin: 0 30px;
-}
-#page-header h1 {
-	font-size: 2rem;
 }
 .blurb h2 {
 	font-size: 1.2rem;
@@ -513,5 +491,22 @@ responsive
 }
 .blurb {
 	width: 60%;
+}
+.button {
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	padding: .8rem;
+	box-shadow: inset 0 .3% 0 rgba(0,0,0,.2);
+	border-radius: 10rem;
+}
+.shop1, .shop2 {
+	width: 80%;
+	margin: 0 20px;
+}
+.servicesButton {
+	font-size: 1rem;
+	width: 100%;
+	margin: 0 30px;
 }
 }
