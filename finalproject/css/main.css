@@ -248,7 +248,7 @@ Services Section
 
 .services {
 	clear: both;
-	margin: 2% 17% 0% 17%;
+	margin: 2% 15% 0% 15%;
 }
 .services1, .services2, .services3 {
 	float: left;
@@ -472,7 +472,6 @@ responsive
 }
 }
 
-
 @media screen and (max-width: 640px) {
 
 #page-header h1 {
@@ -508,5 +507,12 @@ responsive
 	font-size: 1rem;
 	width: 100%;
 	margin: 0 30px;
+}
+.charities {
+	text-align: center;
+	margin: 50px 0;
+}
+.charities a{
+	padding: 0;
 }
 }
